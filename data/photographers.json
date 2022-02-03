@@ -7,7 +7,7 @@
             "tags": ["portrait", "events", "travel", "animals"],
             "tagline": "Voir le beau dans le quotidien",
             "price": 400,
-            "portrait": "../../assets/photographers/portraits/MimiKeel.jpg",
+            "portrait": "../assets/photographers/portraits/MimiKeel.jpg",
             "alt": "Mimi Keel portrait"
         },
         {
