@@ -3,20 +3,23 @@
   <head>
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" />
-    <title>FishEye</title>
+    <title>FishEye Accueil</title>
+    <script src="./scripts/factories/photographer-factory.js" defer></script>
+    <script src="./scripts/pages/index.js" defer></script>
+    <script src="./scripts/pages/photographer-page.js" defer></script>
   </head>
   <body>
-    <header>
-        <img src="./assets/images/logo.png" class="logo" />
+    <header role="banner">
+        <a href="./index.html" title="Fisheye Accueil">
+            <img src="./assets/images/logo.png" alt="page d'accueil de fisheye" class="logo" />
+        </a>
         <h1>Nos photographes</h1>
     </header>
     <main id="main">
-        <div class="photographer_section"></div>
+        <div class="photographers_section"></div>
     </main>
-    <script src="./scripts/factories/photographer.js"></script>
-    <script src="./scripts/pages/index.js"></script>
-    <script src="./scripts/pages/photographer.js"></script>
   </body>
 </html>
