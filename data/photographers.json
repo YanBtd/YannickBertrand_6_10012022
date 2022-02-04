@@ -7,7 +7,7 @@
             "tags": ["portrait", "events", "travel", "animals"],
             "tagline": "Voir le beau dans le quotidien",
             "price": 400,
-            "portrait": "../assets/photographers/portraits/MimiKeel.jpg",
+            "portrait": "assets/photographers/portraits/MimiKeel.jpg",
             "alt": "Mimi Keel portrait"
         },
         {
@@ -18,7 +18,7 @@
             "tags": ["sport", "architecture"],
             "tagline": "Capturer des compositions complexes",
             "price": 250,
-            "portrait": "../../assets/photographers/portraits/EllieRoseWilkens.jpg",
+            "portrait": "assets/photographers/portraits/EllieRoseWilkens.jpg",
             "alt": "Ellie-Rose Wilkens portrait"
         },
         {
@@ -29,7 +29,7 @@
             "tags": ["art", "fashion", "events"],
             "tagline": "Photographe freelance",
             "price": 500,
-            "portrait": "../../assets/photographers/portraits/TracyGalindo.jpg",
+            "portrait": "assets/photographers/portraits/TracyGalindo.jpg",
             "alt": "Tracy Galindo portrait"
 
         },
@@ -41,7 +41,7 @@
             "tags": ["travel", "portrait"],
             "tagline": "Toujours aller de l'avant",
             "price": 350,
-            "portrait": "../../assets/photographers/portraits/NabeelBradford.jpg",
+            "portrait": "assets/photographers/portraits/NabeelBradford.jpg",
             "alt": "Nabeel Bradford portrait"
 
         },
@@ -53,7 +53,7 @@
             "tags": ["sport", "fashion", "events", "animals"],
             "tagline": "Je crée des souvenirs",
             "price": 275,
-            "portrait": "../../assets/photographers/portraits/RhodeDubois.jpg",
+            "portrait": "assets/photographers/portraits/RhodeDubois.jpg",
             "alt": "Rhode Dubois portrait"
 
         },
@@ -65,7 +65,7 @@
             "tags": ["travel", "architecture"],
             "tagline": "Toujours à la recherche de LA photo",
             "price": 300,
-            "portrait": "../../assets/photographers/portraits/MarcelNikolic.jpg",
+            "portrait": "assets/photographers/portraits/MarcelNikolic.jpg",
             "alt": "Marcel Nikolic portrait"
 
         }

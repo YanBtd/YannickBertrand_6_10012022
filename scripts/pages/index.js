@@ -1,6 +1,6 @@
 async function getPhotographers() {
     
-    const response = await fetch('./data/photographers.json', { mode: 'same-origin' })
+    const response = await fetch('data/photographers.json', { mode: 'same-origin' })
     const contentType = response.headers.get('content-type');
     if (!contentType || !contentType.includes('application/json')) {
         throw new TypeError("Ce fichier n'est pas au format JSON!");
