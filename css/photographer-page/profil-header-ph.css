@@ -1,0 +1,47 @@
+.ph-city {
+    color: #901c1c;
+    font-size: 1.5em;
+    margin: 0;
+}
+.ph-infos h2 {
+    color: #D3573C;
+    font-size: 2.4em;
+    font-weight: 400;
+    margin: 0;
+}
+.ph-profil {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.ph-profil button {
+    background: #901c1c;
+    border: none;
+    border-radius: 5px;
+    bottom: 28px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    height: 50px;
+    width: 170px;
+}
+.ph-profil button:hover {
+    background: #651414;
+    transform: scale(1.05);
+}
+.ph-profil img {
+    border-radius: 50%;
+    height: 200px;
+    object-fit: cover;
+    width: 200px;
+}
+.ph-tagline {
+    color: #525252;
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+
+
+
