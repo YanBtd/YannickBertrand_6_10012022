@@ -15,20 +15,20 @@ import MediaBuilder from './pages/photographe/MediaBuilder.js';
 
 (async function appRouter() {
     try {
-        const data = await getDataFisheye()
+        const DATA_FISHEYE = await getDataFisheye()
         if (window.location.pathname.includes("/photographer.html")) {
             // Affichage Profil Photographe
-            displayPhotographerProfil(data);
+            displayPhotographerProfil(DATA_FISHEYE);
 
             // Affichage Bouton dropdown
-            new DropDownMenu().dropDown(data);
+            new DropDownMenu().dropDown(DATA_FISHEYE);
 
             // Affichage Gallery photographe & Box Likes + tarif
-            new MediaBuilder().photographersMedias(data);
+            new MediaBuilder().photographersMedias(DATA_FISHEYE);
             return;
         }
         // Affichage Page d'Accueil
-        await displayPhotographers(data);
+        displayPhotographers(DATA_FISHEYE);
     }
     catch (err) {
         console.error('Erreur accès dataFisheye ');

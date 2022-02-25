@@ -1,7 +1,7 @@
 'use strict';
 
-import Modal from './Modal.js';
-import Form from './Form.js';
+import Modal from './modal.js';
+import Form from './form.js';
 
 // Création Profil Photographe
 export async function displayPhotographerProfil(data) {
