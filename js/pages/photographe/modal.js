@@ -13,19 +13,18 @@ export default class Modal {
             closeBtn[0].addEventListener('click', this.closeModal);
         }
     }
-
+    // Ouverture modale
     launchModal() {
-        let modalbg = document.getElementById("form-dialog");
+        const modalbg = document.getElementById("form-dialog");
 
-        modalbg.style.display = 'block';
+        modalbg.style.display = 'flex';
     }
-
+    // Fermeture modale
     closeModal() {
         let modalbg = document.getElementById("form-dialog");
 
         modalbg.style.display = 'none';
     }
-
     // Affichage nom du photographe dans formulaire
     displayPhName(data) {
         let id = window.location.search.split('id=')[1];
@@ -34,4 +33,4 @@ export default class Modal {
         let phNameTemplate = `${photographers[0].name}`
         phName.innerHTML = phNameTemplate;
     }
-}
+};

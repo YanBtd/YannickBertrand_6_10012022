@@ -1,59 +1,84 @@
 'use strict';
 
 export default class Form {
+    TEXTEREGEX = /^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ.\s-]{2,25}$/;
+    EMAILREGEX = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
+
+    constructor() {
+        window.check = this.addListener.bind(this);
+    }
     manageFields() {
-        let form = document.getElementById('contact-form');
-        let firstName = document.getElementById('first-name');
-        let lastName = document.getElementById('last-name');
-        let email = document.getElementById('email');
-        let message = document.getElementById('message');
-        const TEXTEREGEX = /^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ.\s-]{2,25}$/;
-        const EMAILREGEX = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
+        const FORM = document.getElementById('contact-form');
+        const FIRSTNAME = document.getElementById('first-name');
+        const LASTNAME = document.getElementById('last-name');
+        const EMAIL = document.getElementById('email');
+        const MESSAGE = document.getElementById('message');
 
-        form.addEventListener('submit', (e) => {
+        FORM.addEventListener('submit', (e) => {
+            // On stoppe la propagation de l'évenement
             e.preventDefault();
-            let isValid = this.checkNames(firstName, TEXTEREGEX) &&
-                this.checkNames(lastName, TEXTEREGEX) &&
-                this.checkEmail(email, EMAILREGEX) &&
-                this.checkMessage(message);
+            
+            const IS_FORM_VALID = this.checkNames(FIRSTNAME, this.TEXTEREGEX) &&
+                this.checkNames(LASTNAME, this.TEXTEREGEX) &&
+                this.checkEmail(EMAIL, this.EMAILREGEX) &&
+                this.checkMessage(MESSAGE, this.TEXTEREGEX);
 
-            if (isValid) {
-                firstName.style.border = 'none';
-                lastName.style.border = 'none';
-                email.style.border = 'none';
-                message.style.border = 'none';
-                document.getElementById('contact-form').reset();
-                // form.style.display = 'none';
-            } else {
-                this.errorVerification(firstName, lastName, email, message, TEXTEREGEX, EMAILREGEX);
+            if (IS_FORM_VALID) {
+                FIRSTNAME.style.border = 'none';
+                LASTNAME.style.border = 'none';
+                EMAIL.style.border = 'none';
+                MESSAGE.style.border = 'none';
+                FORM.reset();
+                return;
             }
+
+            this.errorVerification(FIRSTNAME, LASTNAME, EMAIL, MESSAGE, this.TEXTEREGEX, this.EMAILREGEX);
         });
-        // form.firstName.addEventListener("blur", this.checkNames(firstName, TEXTEREGEX));
     }
-
-    errorVerification(firstName, lastName, email, message, TEXTEREGEX, EMAILREGEX) {
-        this.checkNames(firstName, TEXTEREGEX);
-        this.checkNames(lastName, TEXTEREGEX);
-        this.checkEmail(email, EMAILREGEX);
-        this.checkMessage(message);
+    // Création écouteur des champs du form
+    addListener(target) {
+        target.onblur = () => {
+            this.checkInput(target)
+        }
     }
-
-    checkNames(elt, TEXTEREGEX) {
-        if (elt.value.trim().length < 2 || elt.value.trim() === "" || !elt.value.match(TEXTEREGEX)) {
-            elt.parentElement.setAttribute('data-error-visible', 'true');
-            elt.style.border = '2px solid red';
-            return false;
-        } else {
-            elt.parentElement.setAttribute('data-error-visible', 'false');
-            elt.style.border = '2px solid green';
-            return true;
+    // Récupération du type de champ + appel test conditions
+    checkInput(target) {
+        target.onblur = null;
+        // console.log("I am the method 'checkInput'.", target, target.type);
+        let isTargetValid;
+        switch (target.type) {
+            case "text": isTargetValid = this.checkNames(target); break;
+            case "email": isTargetValid = this.checkEmail(target); break;
+            case "textarea": isTargetValid = this.checkMessage(target); break;
+        }
+        if (!isTargetValid) {
+            target.parentElement.setAttribute('data-error-visible', 'true');
+            target.style.border = '2px solid red';
+        }
+        if (isTargetValid) {
+            target.parentElement.setAttribute('data-error-visible', 'false');
+            target.style.border = '2px solid green';
         }
     }
 
-    checkEmail(elt, EMAILREGEX) {
-        if (elt.value.trim().match(EMAILREGEX) && elt.value.trim() !== "") {
-            elt.parentElement.setAttribute('data-error-visible', 'false');
-            elt.style.border = '2px solid green';
+    errorVerification(FIRSTNAME, LASTNAME, EMAIL, MESSAGE, TEXTE_REGEX, EMAIL_REGEX) {
+        this.checkNames(FIRSTNAME, TEXTE_REGEX);
+        this.checkNames(LASTNAME, TEXTE_REGEX);
+        this.checkEmail(EMAIL, EMAIL_REGEX);
+        this.checkMessage(MESSAGE, TEXTE_REGEX);
+    }
+
+    checkNames(elt, TEXTE_REGEX) {
+        if (elt.value.trim().length < 2 || elt.value.trim() === "" || !elt.value.match(TEXTE_REGEX)) {
+            elt.parentElement.setAttribute('data-error-visible', 'true');
+            elt.style.border = '2px solid red';
+            return false;
+        }
+        return true;
+    }
+
+    checkEmail(elt, EMAIL_REGEX) {
+        if (elt.value.trim().match(EMAIL_REGEX) && elt.value.trim() !== "") {
             return true;
         }
         elt.parentElement.setAttribute('data-error-visible', 'true');
@@ -61,14 +86,12 @@ export default class Form {
         return false;
     }
 
-    checkMessage(elt) {
-        if (elt.value.trim() === '' || elt.value.trim() == null) {
+    checkMessage(elt, TEXTE_REGEX) {
+        if (elt.value.trim() === '' || elt.value.trim() == null || !elt.value.match(TEXTE_REGEX)) {
             elt.parentElement.setAttribute('data-error-visible', 'true');
             elt.style.border = '2px solid red';
             return false;
         }
-        elt.parentElement.setAttribute('data-error-visible', 'false');
-        elt.style.border = '2px solid green';
         return true;
     }
 }
