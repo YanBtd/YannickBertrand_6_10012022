@@ -1,11 +1,10 @@
 'use strict';
 
-import {getDataFisheye} from '../../dataFisheye.js';
 import {createPhotographer} from '../../factories/photographer-factory.js';
 
-export async function displayPhotographers() {
+export function displayPhotographers(data) {
     // Récupération du tableau des photographes
-    const { dataPhotographers } = await getDataFisheye();
+    const { dataPhotographers } = data;
     const photographersSection = document.querySelector(".photographers_section");
 
     dataPhotographers.forEach((photographer) => {
