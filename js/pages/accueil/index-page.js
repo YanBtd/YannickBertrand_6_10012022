@@ -1,15 +1,15 @@
 'use strict';
 
 import {getDataFisheye} from '../../dataFisheye.js';
-import {photographerFactory} from '../../factories/photographer-factory.js';
+import {createPhotographer} from '../../factories/photographer-factory.js';
 
 export async function displayPhotographers() {
+    // Récupération du tableau des photographes
     const { dataPhotographers } = await getDataFisheye();
     const photographersSection = document.querySelector(".photographers_section");
 
     dataPhotographers.forEach((photographer) => {
-        const photographerModel = photographerFactory(photographer);
-        const newPhotographer = photographerModel.createPhotographer();
-        photographersSection.appendChild(newPhotographer);
+        // On peuple la section avec tous les photographes
+        photographersSection.appendChild(createPhotographer(photographer));
     });
 };
