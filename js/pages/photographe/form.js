@@ -28,6 +28,8 @@ export default class Form {
                 LASTNAME.style.border = 'none';
                 EMAIL.style.border = 'none';
                 MESSAGE.style.border = 'none';
+                // Affichage champs du form dans console
+                this.consoleDisplayFields(FIRSTNAME, LASTNAME, EMAIL, MESSAGE);
                 FORM.reset();
                 return;
             }
@@ -59,6 +61,14 @@ export default class Form {
             target.parentElement.setAttribute('data-error-visible', 'false');
             target.style.border = '2px solid green';
         }
+    }
+
+    consoleDisplayFields(FIRSTNAME, LASTNAME, EMAIL, MESSAGE) {
+        console.group('Form Fields');
+        console.log(`Prénom : ${FIRSTNAME.value}`);
+        console.log(`Nom : ${LASTNAME.value}`);
+        console.log(`Email : ${EMAIL.value}`);
+        console.log(`Message : ${MESSAGE.value}`);
     }
 
     errorVerification(FIRSTNAME, LASTNAME, EMAIL, MESSAGE, TEXTE_REGEX, EMAIL_REGEX) {

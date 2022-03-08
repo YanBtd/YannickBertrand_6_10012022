@@ -47,44 +47,42 @@
         <div id="box" aria-label="photographer likes and price"></div>
 
         <!-- Formulaire modal -->
-        <div role="dialog" id="form-dialog" aria-label="contact me form" aria-labelledby="form-title"
-            aria-hidden="true">
+        <div role="dialog" id="form-dialog" aria-label="contact me form">
             <form method="POST" id="contact-form" novalidate>
                 <header aria-label="contact form header">
                     <h1 id="form-title">
                         <span>Contactez-moi</span>
                         <span id="ph-form-name"></span>
                     </h1>
-                    <button id="close-btn" title="Close form" type="button">
-                        <span class="fas fa-times close-form-icon" aria-hidden="true"></span>
-                    </button>
+                    <button id="close-btn" title="Close form" type="button" class="fas fa-times close-form-icon" >&nbsp;</button>
                 </header>
                 <!-- Prénom -->
                 <div class="formData" data-error="Veuillez entrer votre prénom." data-error-visible="false">
                     <label for="first-name" id="label-firstname">Prénom</label>
-                    <input name="first-name" id="first-name" onfocus="check(this)" aria-labelledby="label-firstname"
-                        placeholder="Prénom">
+                    <input type="text" name="first-name" id="first-name" onfocus="check(this)" aria-labelledby="label-firstname"
+                    aria-required="true" placeholder="Prénom">
                 </div>
                 <!-- Nom -->
                 <div class="formData" data-error="Veuillez entrer votre nom." data-error-visible="false">
                     <label for="last-name" id="label-lastname">Nom</label>
-                    <input name="last-name" id="last-name" onfocus="check(this)" aria-labelledby="label-lastname"
-                        placeholder="Nom">
+                    <input type="text" name="last-name" id="last-name" onfocus="check(this)" aria-labelledby="label-lastname"
+                    aria-required="true" placeholder="Nom">
                 </div>
                 <!-- Email -->
                 <div class="formData" data-error="Veuillez entrer un email valide." data-error-visible="false">
                     <label for="email" id="label-email">Email</label>
                     <input type="email" onfocus="check(this)" name="email" id="email" aria-labelledby="label-email"
-                        placeholder="user@domain.com">
+                    aria-required="true" placeholder="user@domain.com">
                 </div>
                 <!-- Message -->
                 <div class="formData" data-error="Veuillez entrer votre message." data-error-visible="false">
                     <label for="message" id="label-message">Message</label>
                     <textarea onfocus="check(this)" name="message" id="message" cols="20" rows="5"
-                        aria-labelledby="label-message" placeholder="Votre message..."></textarea>
+                    aria-required="true" aria-labelledby="label-message" placeholder="Votre message..."></textarea>
                 </div>
                 <!-- Bouton envoi -->
-                <input type="submit" value="Envoyer" class="form-submit" title="Send">
+                <!-- <input type="submit" name="envoyer" value="Envoyer" class="form-submit" title="Send"> -->
+                <button type="submit" name="envoyer le formulaire" class="form-submit" title="Send">Envoyer le formulaire</button>
             </form>
         </div>
 
