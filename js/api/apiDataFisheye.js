@@ -1,7 +1,7 @@
 'use strict';
 
 export async function getDataFisheye() {
-    const url = '/json/photographers.json';
+    const url = './json/photographers.json';
     const response = await fetch(url, { mode: 'same-origin' });
     const contentType = response.headers.get('content-type');
 
