@@ -1,10 +1,8 @@
 'use strict';
 
-export default class LikeSubscriber {
+export function likeSubscriber (){
     // Ajout ou retrait d'un like au clic sur icone   
-    constructor() {
-        let media = document.getElementById('ph-works');
-
+        let media = document.getElementById('medias');
         media.addEventListener('click', (e) => {
             let classListTarget = typeof e.target.classList === 'undefined' ? [] : e.target.classList.value.split(' ');
             let hasClassBtn = -1 != classListTarget.indexOf('heart-btn');
@@ -26,6 +24,5 @@ export default class LikeSubscriber {
                     e.target.classList.replace('far', 'fas');
                 }
             }
-        })
-    }
-}
+        });
+    };

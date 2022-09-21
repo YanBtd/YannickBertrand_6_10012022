@@ -1,0 +1,333 @@
+@import url(https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap);
+@import 'lightbox.css';
+
+html {
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+button {
+    border: none;
+    background: none;
+}
+
+/* HEADER */
+header {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+header img {
+    width: 12.5rem;
+}
+
+/* PROFIL-HEADER */
+.ph-profil-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fafafa;
+    padding: 0 2%;
+}
+.ph-infos h2 {
+    color: #d3573c;
+    font-size: 2.4em;
+    font-weight: 400;
+}
+.ph-city {
+    color: #901c1c;
+    font-size: 1.5em;
+}
+.ph-profil-header button {
+    background: #901c1c;
+    border: none;
+    border-radius: 5px;
+    bottom: 28px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    min-height: 50px;
+    min-width: 170px;
+}
+.ph-profil-header button:hover {
+    background: #651414;
+    transform: scale(1.05);
+}
+.ph-profil-header img {
+    border-radius: 50%;
+    height: 200px;
+    object-fit: cover;
+    width: 200px;
+}
+
+/* DROPDOWN */
+.dropdown {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 50px;
+}
+.dropdown > span {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: black;
+    margin-right:20px;
+}
+#sort-wrapper {
+    min-width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-radius: 5px;
+    background: #901c1c;
+}
+#sort-wrapper button {
+    font-size: 1rem;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 20px;
+}
+#sort-wrapper button:hover {
+    cursor: pointer;;
+}
+#sort-wrapper > span {
+    color: #fff;
+    padding-right: 15px;
+}
+ul.ul-menu {
+    border-radius: 5px;
+    color: #fff;
+    display: none;
+    position: absolute;
+    min-width: 150px;
+    top: -1px;
+    z-index: 1;
+    background: #901c1c;
+}
+ul.ul-menu li {
+    list-style: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 1rem;
+}
+ul.ul-menu li:hover {
+    background-color: #651414;
+    cursor: pointer;
+}
+ul.ul-menu hr {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* MEDIAS */
+#medias {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    width: 100%;
+}
+@media screen and (max-width: 350px) {
+    #medias {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 280px));
+    }
+}
+@media (min-width: 1240px) {
+    #medias {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* MEDIA */
+.article {
+    color: #901c1c;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-top: 10%;
+    height: 300px;
+    width: 300px;
+    justify-self: center;
+}
+.article .fa-heart:hover,
+.article img:hover,
+.article video:hover {
+    cursor: pointer;
+}
+.article .ph-work-title {
+    width: 14rem;
+}
+.article img,
+.article video {
+    border-radius: 0.3rem;
+    object-fit: cover;
+    width: 100%;
+    height: calc(100% - 28px);
+}
+.article-infos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.article-title {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+/* BOX LIKES */
+#box-likes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #db8876;
+    border-radius: 0.3rem;
+    width: 18rem;
+    height: 4rem;
+    right: 2.5rem;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 0 2rem;
+    position: relative;
+    float: right;
+    margin-top: 30px;
+}
+#box-likes .fa-heart {
+    left: 4.8rem;
+    position: absolute;
+}
+@media (max-width: 430px) {
+    #box-likes {
+        position: absolute;
+        right: 8%;
+    }
+}
+
+/* FORM */
+#form-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000077;
+    width: 100vw;
+    height: 100vh;
+}
+form {
+    border: none;
+    border-radius: 0.3rem;
+    max-width: 42rem;
+    min-width: 20rem;
+    width: 100%;
+    background: #db8876;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 2.2rem 2.2rem;
+}
+.formData {
+    display: flex;
+    flex-direction: column;
+}
+.formData[data-error]::after {
+    color: #901c1c;
+    content: attr(data-error);
+    display: block;
+    flex-direction: column;
+    font-size: 1em;
+    line-height: 0.3;
+    margin-bottom: 7px;
+    margin-top: 7px;
+    opacity: 0;
+    text-align: left;
+    transition: 0.3s;
+}
+.formData[data-error-visible="true"]::after {
+    opacity: 1;
+}
+form #ph-form-name {
+    display: block;
+}
+form .close-form-icon {
+    color: #fff;
+    font-size: 2em;
+    margin-top: 0.6rem;
+}
+form .close-form-icon:hover,
+form .form-submit:hover {
+    cursor: pointer;
+}
+form .form-submit {
+    align-self: center;
+    background: #901c1c;
+    color: #fff;
+    font-size: 1em;
+    height: 2.2rem;
+    margin-top: 1.6rem;
+    width: 10.6rem;
+}
+form button {
+    background: none;
+    border: none;
+}
+form h1 {
+    font-size: 2.2em;
+    font-weight: 400;
+}
+form header {
+    display: flex;
+    justify-content: space-between;
+    margin: -0.3rem 0.3rem 1.25rem 0;
+}
+form input,
+form textarea {
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 1.2em;
+    padding: 0.3rem;
+}
+form label {
+    font-size: 1.2em;
+    margin: 0.3rem 0 0.2rem;
+}
+input[data-error]::after {
+    color: #901c1c;
+    content: attr(data-error);
+    font-size: 0.6em;
+}
+@media (min-width: 600px) {
+    form .close-form-icon {
+        font-size: 2.4em;
+    }
+    form .form-submit {
+        align-self: flex-start;
+        height: 4.4rem;
+    }
+    form h1 {
+        font-size: 2.6em;
+    }
+    form label,
+    form input,
+    form textarea {
+        font-size: 1.6em;
+    }
+}

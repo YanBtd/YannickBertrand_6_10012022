@@ -1,0 +1,75 @@
+/* LIGHTBOX */
+.lightbox {
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity .3s;
+    animation: fadin .3s;
+}
+.lightbox.fadeOut {
+    opacity: 0;
+}
+@keyframes fadin {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.lightbox__content {
+    position: fixed;
+    top: 3%;
+    left: 50%;
+    width: 60%;
+    height: 100%;
+    transform: translate(-50%, 0);
+}
+.lightbox__mediaSrc {
+    height: 90%;
+}
+.lightbox__mediaSrc img,
+.lightbox__mediaSrc video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.lightbox__mediaName {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #901c1c;
+    text-align: center;
+    margin-top: 15px;
+}
+.lightbox__close {
+    color: #901c1c;
+    font-size: 1.7rem;
+    position: absolute;
+    right: -3rem;
+    top: 0.5rem;
+    cursor: pointer;
+}
+.lightbox__close:hover {
+    color: red;
+}
+.lightbox__prev {
+    color: #901c1c;
+    font-size: 2rem;
+    left: -3rem; 
+    position: absolute;
+    top: 45%;
+    cursor: pointer;
+}
+.lightbox__prev:hover {
+    color: red;
+}
+.lightbox__next {
+    color: #901c1c;
+    font-size: 2rem;
+    position: absolute;
+    right: -3rem;
+    top: 45%;
+    cursor: pointer;
+}
+.lightbox__next:hover {
+    color: red;
+}

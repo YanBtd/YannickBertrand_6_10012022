@@ -68,7 +68,7 @@
             "likes": 62,
             "date": "2011-12-08",
             "price": 55,
-            "photoName": "Yellow Beach"
+            "mediaName": "Yellow Beach"
         },
         {
             "id": 8520927,
@@ -78,7 +78,7 @@
             "likes": 11,
             "date": "2011-11-06",
             "price": 55,
-            "photoName": "Urban Jungle"
+            "mediaName": "Urban Jungle"
         },
         {
             "id": 9025895,
@@ -88,7 +88,7 @@
             "likes": 72,
             "date": "2013-08-12",
             "price": 55,
-            "photoName": "Pattern on Pattern"
+            "mediaName": "Pattern on Pattern"
         },
         {
             "id": 9275938,
@@ -98,7 +98,7 @@
             "likes": 69,
             "date": "2018-02-22",
             "price": 55,
-            "photoName": "Wedding Gazebo"
+            "mediaName": "Wedding Gazebo"
         },
         {
             "id": 2053494,
@@ -108,7 +108,7 @@
             "likes": 2,
             "date": "2020-05-25",
             "price": 55,
-            "photoName": "Sparklers"
+            "mediaName": "Sparklers"
         },
         {
             "id": 7324238,
@@ -118,7 +118,7 @@
             "likes": 33,
             "date": "2019-06-12",
             "price": 55,
-            "photoName": "18th Anniversary"
+            "mediaName": "18th Anniversary"
         },
         {
             "id": 8328953,
@@ -128,7 +128,7 @@
             "likes": 24,
             "date": "2011-12-08",
             "price": 100,
-            "photoName": "Horse Sculpture"
+            "mediaName": "Horse Sculpture"
         },
         {
             "id": 7502053,
@@ -138,7 +138,7 @@
             "likes": 88,
             "date": "2007-05-07",
             "price": 55,
-            "photoName": "Triangle Man"
+            "mediaName": "Triangle Man"
         },
         {
             "id": 8523492,
@@ -148,7 +148,7 @@
             "likes": 24,
             "date": "2018-05-05",
             "price": 55,
-            "photoName": "Purple light"
+            "mediaName": "Purple light"
         },
         {
             "id": 75902334,
@@ -158,7 +158,7 @@
             "likes": 75,
             "date": "2019-11-25",
             "price": 55,
-            "photoName": "Mine"
+            "mediaName": "Mine"
         },
 
         {
@@ -169,7 +169,7 @@
             "likes": 52,
             "date": "2013-02-30",
             "price": 70,
-            "photoName": "2000 with 8"
+            "mediaName": "2000 with 8"
         },
         {
             "id": 92758372,
@@ -179,7 +179,7 @@
             "likes": 58,
             "date": "2018-07-17",
             "price": 70,
-            "photoName": "Wings"
+            "mediaName": "Wings"
         },
         {
             "id": 32958383,
@@ -189,7 +189,7 @@
             "likes": 11,
             "date": "2019-08-12",
             "price": 70,
-            "photoName": "Red on Stripes"
+            "mediaName": "Red on Stripes"
         },
         {
             "id": 928587383,
@@ -199,7 +199,7 @@
             "likes": 2,
             "date": "2019-01-02",
             "price": 70,
-            "photoName": "Venture Conference"
+            "mediaName": "Venture Conference"
         },
         {
             "id": 725639493,
@@ -209,7 +209,7 @@
             "likes": 3,
             "date": "2019-05-20",
             "price": 70,
-            "photoName": "Butterfly"
+            "mediaName": "Butterfly"
         },
         {
             "id": 23394384,
@@ -219,7 +219,7 @@
             "likes": 52,
             "date": "2019-07-18",
             "price": 70,
-            "photoName": "Keyboard Check"
+            "mediaName": "Keyboard Check"
         },
         {
             "id": 87367293,
@@ -229,7 +229,7 @@
             "likes": 23,
             "date": "2018-02-22",
             "price": 70,
-            "photoName": "Emcee"
+            "mediaName": "Emcee"
         },
         {
             "id": 593834784,
@@ -239,7 +239,7 @@
             "likes": 52,
             "date": "2017-03-13",
             "price": 70,
-            "photoName": "Majesty"
+            "mediaName": "Majesty"
         },
         {
             "id": 83958935,
@@ -249,7 +249,7 @@
             "likes": 52,
             "date": "2016-06-12",
             "price": 70,
-            "photoName": "Puppiness"
+            "mediaName": "Puppiness"
         },
 
         {
@@ -260,7 +260,7 @@
             "likes": 23,
             "date": "2017-03-18",
             "price": 45,
-            "photoName": "Rock Mountains"
+            "mediaName": "Rock Mountains"
         },
         {
             "id": 343423425,
@@ -270,7 +270,7 @@
             "likes": 101,
             "date": "2017-04-03",
             "price": 45,
-            "photoName": "Outdoor Baths"
+            "mediaName": "Outdoor Baths"
         },
         {
             "id": 73434243,
@@ -280,7 +280,7 @@
             "likes": 99,
             "date": "2018-04-30",
             "price": 45,
-            "photoName": "Road into Hill"
+            "mediaName": "Road into Hill"
         },
         {
             "id": 23425523,
@@ -290,7 +290,7 @@
             "likes": 34,
             "date": "2016-04-05",
             "price": 45,
-            "photoName": "Bridge"
+            "mediaName": "Bridge"
         },
         {
             "id": 23134513,
@@ -300,7 +300,7 @@
             "likes": 23,
             "date": "2017-03-18",
             "price": 45,
-            "photoName": "Boat Wanderer"
+            "mediaName": "Boat Wanderer"
         },
         {
             "id": 92352352,
@@ -310,7 +310,7 @@
             "likes": 66,
             "date": "2018-05-24",
             "price": 45,
-            "photoName": "Sunkissed"
+            "mediaName": "Sunkissed"
         },
         {
             "id": 34513453,
@@ -320,7 +320,7 @@
             "likes": 52,
             "date": "2017-04-21",
             "price": 45,
-            "photoName": "Shaw"
+            "mediaName": "Shaw"
         },
         {
             "id": 23523533,
@@ -330,7 +330,7 @@
             "likes": 95,
             "date": "2018-11-02",
             "price": 45,
-            "photoName": "Alexandra"
+            "mediaName": "Alexandra"
         },
         {
             "id": 525834234,
@@ -340,7 +340,7 @@
             "likes": 25,
             "date": "2019-01-02",
             "price": 45,
-            "photoName": "Afternoon Break"
+            "mediaName": "Afternoon Break"
         },
 
         {
@@ -351,7 +351,7 @@
             "likes": 88,
             "date": "2019-02-03",
             "price": 45,
-            "photoName": "Lonesome"
+            "mediaName": "Lonesome"
         },
         {
             "id": 625025343,
@@ -361,7 +361,7 @@
             "likes": 85,
             "date": "2019-04-03",
             "price": 45,
-            "photoName": "Hill side Color"
+            "mediaName": "Hill side Color"
         },
         {
             "id": 2525345343,
@@ -371,7 +371,7 @@
             "likes": 34,
             "date": "2019-04-07",
             "price": 45,
-            "photoName": "Wednesday"
+            "mediaName": "Wednesday"
         },
         {
             "id": 2523434634,
@@ -381,7 +381,7 @@
             "likes": 63,
             "date": "2019-04-07",
             "price": 45,
-            "photoName": "Nora"
+            "mediaName": "Nora"
         },
         {
             "id": 398847109,
@@ -391,7 +391,7 @@
             "likes": 55,
             "date": "2019-06-20",
             "price": 45,
-            "photoName": "Background"
+            "mediaName": "Background"
         },
         {
             "id": 2534342,
@@ -401,7 +401,7 @@
             "likes": 25,
             "date": "2019-06-21",
             "price": 45,
-            "photoName": "Seaside Wedding"
+            "mediaName": "Seaside Wedding"
         },
         {
             "id": 65235234,
@@ -411,7 +411,7 @@
             "likes": 52,
             "date": "2019-06-25",
             "price": 45,
-            "photoName": "Pinto Wedding"
+            "mediaName": "Pinto Wedding"
         },
         {
             "id": 23523434,
@@ -421,7 +421,7 @@
             "likes": 77,
             "date": "2019-06-28",
             "price": 45,
-            "photoName": "Benevides Wedding"
+            "mediaName": "Benevides Wedding"
         },
         {
             "id": 5234343,
@@ -431,7 +431,7 @@
             "likes": 142,
             "date": "2019-08-23",
             "price": 60,
-            "photoName": "Wild Horses"
+            "mediaName": "Wild Horses"
         },
         {
             "id": 95234343,
@@ -441,7 +441,7 @@
             "likes": 59,
             "date": "2019-07-02",
             "price": 60,
-            "photoName": "Rainbow"
+            "mediaName": "Rainbow"
         },
 
         {
@@ -452,7 +452,7 @@
             "likes": 25,
             "date": "2019-04-03",
             "price": 60,
-            "photoName": "Tower"
+            "mediaName": "Tower"
         },
         {
             "id": 2523434,
@@ -462,7 +462,7 @@
             "likes": 53,
             "date": "2019-05-06",
             "price": 60,
-            "photoName": "Sunset on Canals"
+            "mediaName": "Sunset on Canals"
         },
         {
             "id": 95293534,
@@ -472,7 +472,7 @@
             "likes": 33,
             "date": "2019-05-12",
             "price": 60,
-            "photoName": "Open Mountain"
+            "mediaName": "Open Mountain"
         },
         {
             "id": 356234343,
@@ -482,7 +482,7 @@
             "likes": 53,
             "date": "2019-06-20",
             "price": 60,
-            "photoName": "Bike and Stair"
+            "mediaName": "Bike and Stair"
         },
         {
             "id": 235234343,
@@ -492,7 +492,7 @@
             "likes": 63,
             "date": "2019-06-26",
             "price": 60,
-            "photoName": "Adventure Door"
+            "mediaName": "Adventure Door"
         },
         {
             "id": 6234234343,
@@ -502,7 +502,7 @@
             "likes": 52,
             "date": "2019-06-30",
             "price": 60,
-            "photoName": "Contrast"
+            "mediaName": "Contrast"
         },
         {
             "id": 6525666253,
@@ -512,7 +512,7 @@
             "likes": 63,
             "date": "2019-07-20",
             "price": 60,
-            "photoName": "On a hill"
+            "mediaName": "On a hill"
         },
         {
             "id": 98252523433,
@@ -522,7 +522,7 @@
             "likes": 88,
             "date": "2020-01-05",
             "price": 60,
-            "photoName": "Dome"
+            "mediaName": "Dome"
         },
         {
             "id": 9259398453,
@@ -532,7 +532,7 @@
             "likes": 57,
             "date": "2020-01-20",
             "price": 65,
-            "photoName": "Buenos aires"
+            "mediaName": "Buenos aires"
         },
         {
             "id": 3523523534,
@@ -542,7 +542,7 @@
             "likes": 54,
             "date": "2020-05-05",
             "price": 60,
-            "photoName": "Corner Room"
+            "mediaName": "Corner Room"
         },
 
         {
@@ -553,7 +553,7 @@
             "likes": 150,
             "date": "2018-02-30",
             "price": 70,
-            "photoName": "Tricks in air"
+            "mediaName": "Tricks in air"
         },
         {
             "id": 235234343,
@@ -563,7 +563,7 @@
             "likes": 101,
             "date": "2018-03-05",
             "price": 65,
-            "photoName": "Next Hold"
+            "mediaName": "Next Hold"
         },
         {
             "id": 235343222,
@@ -573,7 +573,7 @@
             "likes": 103,
             "date": "2018-03-10",
             "price": 70,
-            "photoName": "water tunnel"
+            "mediaName": "water tunnel"
         },
         {
             "id": 7775342343,
@@ -583,7 +583,7 @@
             "likes": 77,
             "date": "2018-04-16",
             "price": 50,
-            "photoName": "Sky Cross"
+            "mediaName": "Sky Cross"
         },
         {
             "id": 9253445784,
@@ -593,7 +593,7 @@
             "likes": 88,
             "date": "2018-04-22",
             "price": 65,
-            "photoName": "Race End"
+            "mediaName": "Race End"
         },
         {
             "id": 22299394,
@@ -603,7 +603,7 @@
             "likes": 95,
             "date": "2018-04-27",
             "price": 70,
-            "photoName": "Jump"
+            "mediaName": "Jump"
         },
         {
             "id": 3452342633,
@@ -613,7 +613,7 @@
             "likes": 52,
             "date": "2018-05-03",
             "price": 75,
-            "photoName": "White Light"
+            "mediaName": "White Light"
         },
         {
             "id": 939234243,
@@ -623,7 +623,7 @@
             "likes": 55,
             "date": "2018-05-10",
             "price": 72,
-            "photoName": "Water Modern"
+            "mediaName": "Water Modern"
         },
         {
             "id": 222959233,
@@ -633,7 +633,7 @@
             "likes": 85,
             "date": "2018-05-15",
             "price": 71,
-            "photoName": "Horseshoe"
+            "mediaName": "Horseshoe"
         },
         {
             "id": 965933434,
@@ -643,7 +643,7 @@
             "likes": 66,
             "date": "2018-05-20",
             "price": 58,
-            "photoName": "Cross Bar"
+            "mediaName": "Cross Bar"
         },
         {
             "id": 777723343,
@@ -653,7 +653,7 @@
             "likes": 79,
             "date": "2018-05-21",
             "price": 80,
-            "photoName": "Connected Curves"
+            "mediaName": "Connected Curves"
         }
     ]
 }

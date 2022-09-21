@@ -15,7 +15,7 @@ export default class Form {
         const MESSAGE = document.getElementById('message');
 
         FORM.addEventListener('submit', (e) => {
-            // On stoppe la propagation de l'évenement
+            // On stoppe le comportement par défaut
             e.preventDefault();
             
             const IS_FORM_VALID = this.checkNames(FIRSTNAME, this.TEXTEREGEX) &&
@@ -104,4 +104,4 @@ export default class Form {
         }
         return true;
     }
-}
+};

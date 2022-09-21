@@ -1,15 +1,18 @@
 'use strict';
 
-export default class ImageFactory {
-    // Création d'un élément image et ses attributs src, alt et role
-    createHTML(element) {
-        let eltImage = document.createElement('img');
-        eltImage.setAttribute('src', element.image);
-        eltImage.setAttribute('title', element.photoName);
-        eltImage.setAttribute('alt', element.alt);
-        eltImage.setAttribute('role', 'button');
-        eltImage.className = 'ph-media';
+export class ImageFactory {
+    // Création d'un élément image et ses attributs
+    createHtmlElement(media) {
+        const ELTIMAGE = document.createElement('img');
 
-        return eltImage;
+        ELTIMAGE.setAttribute('id', media.id);  
+        ELTIMAGE.setAttribute('src', media.image);
+        ELTIMAGE.setAttribute('title', media.mediaName);
+        ELTIMAGE.setAttribute('alt', media.alt);
+        ELTIMAGE.setAttribute('role', 'button');
+        ELTIMAGE.setAttribute('aria-label', 'aria-image');
+        ELTIMAGE.className = 'image-media';
+
+        return ELTIMAGE;
     }
 }
