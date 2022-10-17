@@ -12,7 +12,7 @@ export default class Modal {
         if (closeBtn) {
             closeBtn.addEventListener('click', this.closeModal);
         }
-        ///////////////////
+
         document.addEventListener('keyup', (key) => {
             // ECHAP pour fermer
             if (key.code == "Escape") {
@@ -20,7 +20,6 @@ export default class Modal {
                 modalbg.style.display = 'none';
             }
         });
-        /////////////////////
     }
     // Ouverture modale
     launchModal() {
@@ -53,8 +52,7 @@ export default class Modal {
     }
     // Affichage nom du photographe dans formulaire
     displayPhName(unPhotographer) {
-        // let id = window.location.search.split('id=')[1];
-        // let photographers = !id ? data : data.filter(photographer => photographer.id == id);
+
         let phName = document.getElementById('ph-form-name');
         let phNameTemplate = `${unPhotographer.name}`
         phName.innerHTML = phNameTemplate;
@@ -62,8 +60,7 @@ export default class Modal {
 
     tabPressed(event) {
         if (event.keyCode !== 9) return;
-        // console.log(this, this.formInputs, document.activeElement.id);
-        console.log(document.activeElement.id);
+  
         if (this.formInputs.indexOf(document.activeElement.id)=== -1) 
         document.getElementById("close-btn").focus();
     }

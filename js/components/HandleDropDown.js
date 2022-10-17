@@ -33,7 +33,6 @@ export class DropDownMenu {
 
     displaySortedMedias(sortedMedias)  {
         // Création + Affichage des médias triés
-        // document.getElementById("medias").innerHTML = "";
         this.medias.innerHTML = "";
         new GalleryFactory().createGallery(sortedMedias);
     }

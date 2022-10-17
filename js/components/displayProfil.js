@@ -11,7 +11,6 @@ export function displayProfil(photographersArray) {
 
     // Récupération de l'id du photographer dans l'url
     const ID = window.location.search.split('id=')[1];
-    // console.log('displayProfil() l\'ID:', ID);
 
     // On cherche dans le tableau LE photographe dont l'id est celui dans l'url (ID)
     const PHOTOGRAPHERS = PHOTOGRAPHERS_ARRAY.filter(photographer => photographer.id == ID);
@@ -39,4 +38,4 @@ export function displayProfil(photographersArray) {
     new Modal().manageModal(lePhotographer);
     // Gestion des champs du form via manageFields()
     new Form().manageFields();
-};
+}

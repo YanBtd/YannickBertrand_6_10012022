@@ -1,7 +1,7 @@
 'use strict';
 
 export async function getDataFisheye() {
-    const url = './json/photographers.json';
+    const url = '../json/photographers.json';
     const response = await fetch(url, { mode: 'same-origin' });
     const contentType = response.headers.get('content-type');
 
@@ -12,11 +12,8 @@ export async function getDataFisheye() {
     const objDataFisheye = await response.json();
 
     const photographersArray = [...objDataFisheye.photographers];
-    // console.log('getDataFisheye():', photographersArray);
 
     const mediasArray = [...objDataFisheye.medias];
-    // console.log('getDataFisheye(), mediasArray vaut:', mediasArray);
-    // console.log('getDataFisheye(), typeof mediasArray:', typeof mediasArray);
 
     return {
         'photographersArray': photographersArray,

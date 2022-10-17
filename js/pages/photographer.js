@@ -28,4 +28,3 @@ new DropDownMenu().dropDown(MEDIASARRAY);
 
 // Affichage Gallery photographe & Box Likes + tarif
 displayGalleryAndBox(MEDIASARRAY, PHOTOGRAPHERSARRAY);
-

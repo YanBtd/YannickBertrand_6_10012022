@@ -84,7 +84,6 @@ export class Lightbox {
         
         // SI extentionmedia === 'mp4', on active controls & autoplay
         if (EXTENTIONMEDIA === 'mp4') {
-            // console.log('setControls() dit EXTENTIONMEDIA vaut:', EXTENTIONMEDIA);
             this.currentElement.setAttribute("controls", "controls");
             this.currentElement.setAttribute("autoplay", "autoplay");
             // this.currentElement.setAttribute("muted", "muted");
@@ -147,64 +146,4 @@ export class Lightbox {
         }
         this.displayMedia();
     }
-
-    // handleEvents() {
-    //     document.querySelector(".right-arrow-icon").addEventListener("click", () => {
-    //         this.next();
-    //     });
-    //     document.querySelector(".left-arrow-icon").addEventListener("click", () => {
-    //         this.previous();
-    //     });
-    //     document.querySelector(".close-icon").addEventListener("click", () => {
-    //         this.closeLightbox();
-    //     });
-    //     this.lightbox.addEventListener("click", (e) => {
-    //         if (e.target == e.currentTarget) {
-    //             this.closeLightbox();
-    //         }
-    //     });
-    //     document.addEventListener("keyup", (e) => {
-  
-    //         switch(e.key) {
-    //             case "ArrowRight":
-    //                 // console.log(e.key);
-    //                 // console.log("next !!");
-    //                 this.next(e);
-    //                 break;
-    //             case "ArrowLeft":
-    //                 // console.log(e.key);
-    //                 // console.log("previous !!");
-    //                 this.previous(e);
-    //                 break;
-    //             case "Escape":
-    //                 // console.log(e.key);
-    //                 // console.log("close !!");
-    //                 this.closeLightbox(e);
-    //                 break;
-    //         }
-    //     });
-    // }
-
-    // keyboard() {
-    //     this.lightbox.addEventListener("keydown", (e) => {
-            
-    //         // ECHAP pour fermer
-    //         if (e.key == "Escape") {
-    //             this.closeLightbox();
-    //         }
-
-    //         // Flèche droite pour avancer
-    //         else if (e.key == "ArrowRight") {
-    //             this.next();
-    //         }
-
-    //         // Flèche gauche pour reculer
-    //         else if (e.key == "ArrowLeft") {
-    //             this.previous();
-    //         } else {
-    //             console.log("erreur dans le else")
-    //         }
-    //     });
-    // }
-
 }
