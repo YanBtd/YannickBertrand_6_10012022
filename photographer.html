@@ -2,28 +2,27 @@
 <html lang="fr">
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FishEye - Photographe </title>
     <link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="./css/photographer.css" />
+    <link rel="stylesheet" type="text/css" href="./css/photographer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script type="module" src="./js/pages/photographer.js" defer></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 
 <body>
-    <header role="banner">
+    <header>
         <a href="./index.html" title="Fisheye Accueil">
-            <img src="./assets/images/logo.png" alt="page d'accueil de fisheye" class="logo" />
+            <img src="./assets/images/logo.png" alt="page d'accueil de fisheye" class="logo">
         </a>
     </header>
     <main>
         <!-- Profil photographe -->
         <header aria-label="photographer information">
-            <section id="ph-profil-header"></section>
+            <div id="ph-profil-header"></div>
         </header>
 
         <!-- Dropdown -->
@@ -36,9 +35,7 @@
                     <li class="li" role='option' tabindex="0">Popularité<span
                             class="fas fa-chevron-up arrow-up-close"></span>
                     </li>
-                    <hr>
                     <li class="li" role='option' tabindex="0">Date</li>
-                    <hr>
                     <li class="li" role='option' tabindex="0">Titre</li>
                 </ul>
             </div>
@@ -48,7 +45,7 @@
         <section id='medias' aria-label='photographer medias'></section>
 
         <!-- Box Likes & Tarif journalier -->
-        <div id="box-likes" aria-label="photographer likes and price"></div>
+        <div id="box-likes"></div>
 
         <!-- Formulaire modal -->
         <div role="dialog" id="form-dialog" aria-label="contact me form">
@@ -86,11 +83,12 @@
                         aria-labelledby="label-message" placeholder="Votre message..."></textarea>
                 </div>
                 <!-- Bouton envoi -->
-                <button type="submit" name="envoyer le formulaire" class="form-submit" alt="Envoyer"
+                <button type="submit" name="envoyer le formulaire" class="form-submit"
                     title="Envoyer">Envoyer le formulaire</button>
             </form>
         </div>
     </main>
+    <script type="module" src="./js/pages/photographer.js"></script>
 </body>
 
 </html>
